@@ -20,7 +20,7 @@ body {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10rem;
+  grid-template-rows: 1fr 1fr;
   height: 100vh;
 }
 
@@ -30,9 +30,7 @@ main {
 
 footer {
   grid-area: footer;
-  color: #707070;
   text-align: center;
-  line-height: 5rem;
   min-height: 50px;
 }
 
