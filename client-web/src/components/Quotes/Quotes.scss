@@ -1,5 +1,22 @@
 @import "../../utilities/constants";
 
+@mixin white-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(175, 0, 0, 0) 100%
+  );
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-210px * 6));
+  }
+}
+
 .qoutes-container {
   margin: 0 auto;
   padding: 0 5rem;
@@ -20,6 +37,37 @@
   .quote-container {
     display: flex;
     padding-top: 2rem;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100rem;
+
+    &::before,
+    &::after {
+      @include white-gradient;
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 10rem;
+      z-index: 2;
+    }
+
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(210px * 12);
+    }
 
     .quote-item-container {
       display: flex;

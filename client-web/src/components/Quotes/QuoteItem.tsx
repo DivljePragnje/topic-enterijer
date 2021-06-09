@@ -4,7 +4,7 @@ export const QuoteItem = (props: any) => {
   return (
     <div className="quote-item-container">
       <div className="quote-block">
-        <i className="fa fa-quote-left"></i>
+        <i className="fa fa-quote-left" />
         <p className="quote">{quote}</p>
       </div>
       <div className="quote-triangle" />
