@@ -5,8 +5,6 @@ export default function Header(props: any) {
   return (
     <div className="header-wrapper">
       <img src={image}></img>
-
-      <div className="path">Dsadsadsa</div>
     </div>
   );
 }

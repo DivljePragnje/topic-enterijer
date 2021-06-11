@@ -1,7 +1,19 @@
+import { useLayoutEffect } from "react";
+import { Button } from "../../components/Button/Button";
 import Header from "../../components/Header/Header";
 import "./ContactScreen.scss";
 
 export default function ContactScreen() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
+
+  const onDirectionClicked = () => {
+    console.log("IDEMO")
+  }
+
   return (
     <div className="contact-container">
       <Header image={"/images/headers/contact-us.jpg"} />
@@ -14,9 +26,13 @@ export default function ContactScreen() {
           <p>
             Mon - Fri, 9am - 5pm <br></br>Saturday, 11am - 5pm
           </p>
-          <a href="https://www.google.com/maps/dir//45.6234722,19.5469444/@45.6234722,19.5447557,17z" target="_blank">
+          
+          <p><i className="fa fa-phone-square"></i> 060/144-34-36<br></br><i className="fa fa-envelope-square"></i> topicenterijer@gmail.com </p>
+         
+          <Button text="GET DIRECTION" onClickCallback={onDirectionClicked}/>
+          {/*<a href="https://www.google.com/maps/dir//45.6234722,19.5469444/@45.6234722,19.5447557,17z" target="_blank">
             <button>GET DIRECTION</button>
-          </a>
+          </a>*/}
         </div>
       </div>
     </div>

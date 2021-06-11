@@ -1,0 +1,55 @@
+@import "../../utilities/constants";
+
+.button-wrapper {
+    display: inline-flex;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: thin;
+    height: 40px;
+    width: 200px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+.light1 {      
+    background-color: $light_color;
+    color:white;
+    &:hover {
+        color:$light_color;
+        background-color: white;
+    }
+}
+
+.light2 {
+    background-color: white;
+    color:$light_color;
+    &:hover {
+        color:white;
+        background-color: $light_color;
+        
+    }
+}
+.dark1 {
+    background-color: $dark_color;
+    color:white;
+    &:hover {
+        color:$dark_color;
+        background-color: white;
+    }
+}
+
+.dark2 {
+    background-color: white;
+    color:$dark_color;
+    &:hover {
+        color:white;
+        background-color: $dark_color;
+    }
+}

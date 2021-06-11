@@ -1,5 +1,7 @@
 import "./Footer.scss";
 
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     <div>
@@ -23,7 +25,7 @@ export const Footer = () => {
             <li>About Us</li>
             <li>Warranty & Returns</li>
             <li>FAQ</li>
-            <li>Contact Us</li>
+            <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/contact-us" >Contact us</Link></li>
           </ul>
         </div>
         <div className="collection">
