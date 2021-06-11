@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
-import { Menu } from "./components/Menu/Menu";
-import { Quotes } from "./components/Quotes/Quotes";
+import { Navbar } from "./components/Navbar/Navbar";
+import ContactScreen from "./screens/ContactScreen/ContactScreen";
+import HomeScreen from "./screens/HomeScreen/HomeScreen";
 
 function App() {
   return (
     <Router>
       <div className="grid-container">
+        <div className="navbar-container">
+          <Navbar />
+        </div>
         <main>
-          <Menu />
-          <Quotes />
+          <Route path="/contact-us" component={ContactScreen} />
+          <Route path="/" component={HomeScreen} exact />
         </main>
         <footer>
           <Footer />
         </footer>
       </div>
-      <Route></Route>
-      <Route></Route>
-      <Route></Route>
-      <Route></Route>
     </Router>
   );
 }

@@ -8,27 +8,29 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar">
-      <img
-        src={`/images/logos/topic-name-white.png`}
-        alt="Logo"
-        width="100"
-        height="100"
-      />
-      <div className="topnav" id="myTopnav">
-        <Link to="/" className="link active">
-          HOME
-        </Link>
-        <Link to="/news" className="link">
-          NEWS
-        </Link>
-        <Link to="/contact" className="link">
-          CONTACT
-        </Link>
-        <Link to="/about" className="link">
-          ABOUT
-        </Link>
-      </div>
+    <div>
+      <header className="navbar">
+        <img
+          src={`/images/logos/topic-name-white.png`}
+          alt="Logo"
+          width="100"
+          height="100"
+        />
+        <div className="topnav" id="myTopnav">
+          <Link to="/" className="link active">
+            HOME
+          </Link>
+          <Link to="/catalog" className="link">
+            CATALOG
+          </Link>
+          <Link to="/about" className="link">
+            ABOUT US
+          </Link>
+          <Link to="/contact-us" className="link">
+            CONTACT US
+          </Link>
+        </div>
+      </header>
     </div>
   );
 };

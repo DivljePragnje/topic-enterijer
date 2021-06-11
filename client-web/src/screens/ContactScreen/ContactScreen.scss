@@ -1,0 +1,51 @@
+@import "../../utilities/constants";
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .map-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+
+    iframe {
+      width:75%;
+      height:600px;
+      border:0; 
+    }
+    .map-img {
+      border-radius: 1rem;
+      border-color: $dark_color;
+      border-style: solid;
+    }
+
+    .card-content-wrapper {
+      position: absolute;
+      color: white;
+      -webkit-box-shadow: 0px 0px 10px 3px rgba(224, 224, 224, 1);
+      -moz-box-shadow: 0px 0px 10px 3px rgba(224, 224, 224, 1);
+      box-shadow: 0px 0px 5px 1px rgb(65, 65, 65);
+
+      left: 20%;
+      top: 30%;
+
+      width: 25rem;
+      height: 30rem;
+      background-color: $light_color;
+      border-radius: 1rem;
+      text-align: center;
+      padding: 3rem;
+
+      img {
+        width: 10rem;
+      }
+      h4,
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+}

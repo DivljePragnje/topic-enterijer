@@ -29,9 +29,6 @@ export const Menu = () => {
   };
   return (
     <div className="menu-container">
-      <div className="navbar-container">
-        <Navbar />
-      </div>
       <div className="menu-items">{renderMenuItems()}</div>
       {renderImages()}
     </div>

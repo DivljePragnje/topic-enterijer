@@ -1,0 +1,16 @@
+.header-wrapper {
+  position: relative;
+  background: black;
+  overflow: hidden;
+  height: 30rem;
+
+  img {
+    object-fit: none;
+    opacity: 0.4;
+  }
+
+  .path {
+    position: absolute;
+    bottom: top;
+  }
+}

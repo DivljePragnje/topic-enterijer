@@ -20,8 +20,14 @@ body {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 100vh;
+  grid-template-rows: 1fr 20rem;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
 }
 
 main {
