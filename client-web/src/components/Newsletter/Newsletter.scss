@@ -1,0 +1,74 @@
+@import "../../utilities/constants";
+
+.newsletter-container {
+  display: flex;
+  justify-content: space-around;
+
+  .image-container {
+    flex: 1 1 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 30rem;
+  }
+
+  .join-container {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $main_color_brown_light;
+
+    h1,
+    p,
+    form {
+      margin-left: 5rem;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    form {
+      -webkit-box-shadow: 2px 8px 44px -25px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 2px 8px 44px -25px rgba(0, 0, 0, 1);
+      box-shadow: 2px 8px 44px -25px rgba(0, 0, 0, 1);
+      position: relative;
+      background-color: $main_color_brown_light;
+      border-radius: 30rem;
+      width: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      height: 6rem;
+
+      input {
+        padding: 7rem 15px;
+        border: none;
+        flex: 5 1;
+        outline: none;
+      }
+
+      .button {
+        background-color: $main_color_brown;
+        height: 6rem;
+        border: none;
+        cursor: pointer;
+        flex: 1 1 25px;
+        transition: 0.2s;
+
+        span {
+          color: $main_color_brown_light;
+        }
+
+        &:hover {
+          background-color: $main_color_blue;
+        }
+      }
+    }
+  }
+}

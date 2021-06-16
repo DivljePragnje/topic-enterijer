@@ -2,12 +2,12 @@
 .rights {
   margin: 0;
   padding: 1rem 0;
-  background-color: $light_color;
+  background-color: $main_color_brown;
   color: white;
 }
 .footer-container {
   display: flex;
-  background-color: $dark_color;
+  background-color: $main_color_blue;
   padding: 2rem 10rem;
   color: white;
   .about-us,
@@ -20,7 +20,10 @@
     flex: 1 1 0;
     padding: 0 10rem;
   }
-
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   ul {
     list-style-type: none;
     padding: 0;
@@ -28,9 +31,9 @@
     li {
       &:hover {
         text-decoration: underline;
-        color:lightgray;
+        color: lightgray;
       }
-      padding-bottom: 2rem;
+      margin-bottom: 2rem;
     }
   }
 

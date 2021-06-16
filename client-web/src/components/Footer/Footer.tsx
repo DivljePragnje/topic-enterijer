@@ -22,10 +22,25 @@ export const Footer = () => {
         <div className="costumers-service">
           <h3>COSUTMERS SEVICE</h3>
           <ul>
-            <li>About Us</li>
+            <li>
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/about-us"
+              >
+                About Us
+              </Link>
+            </li>
+
             <li>Warranty & Returns</li>
             <li>FAQ</li>
-            <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/contact-us" >Contact us</Link></li>
+            <li>
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/contact-us"
+              >
+                Contact us
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="collection">
@@ -40,10 +55,22 @@ export const Footer = () => {
           <h3>GET SOCIAL</h3>
           <ul>
             <li>
-              <i className="fa fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/topic_enterijer_kula"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fa fa-instagram"></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-facebook-f"></i>
+              <a
+                href="https://www.facebook.com/Drvena-Stolarija-Topic-i-sinovi-1900219806666238/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fa fa-facebook-f"></i>
+              </a>
             </li>
           </ul>
         </div>

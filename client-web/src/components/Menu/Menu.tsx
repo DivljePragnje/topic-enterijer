@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { menuData } from "../../utilities/menuData";
-import { Navbar } from "../Navbar/Navbar";
 import { MenuItem } from "./MenuItem/MenuItem";
 import "./Menu.scss";
 
