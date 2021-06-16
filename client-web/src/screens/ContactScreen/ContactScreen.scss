@@ -12,13 +12,13 @@
     padding: 10rem;
 
     iframe {
-      width:75%;
-      height:600px;
-      border:0; 
+      width: 75%;
+      height: 600px;
+      border: 0;
     }
     .map-img {
       border-radius: 1rem;
-      border-color: $dark_color;
+      border-color: $main_color_blue;
       border-style: solid;
     }
 
@@ -34,7 +34,7 @@
 
       width: 25rem;
       height: 33rem;
-      background-color: $light_color;
+      background-color: $main_color_brown;
       border-radius: 1rem;
       text-align: center;
       padding: 3rem;
