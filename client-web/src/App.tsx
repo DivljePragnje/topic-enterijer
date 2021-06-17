@@ -3,7 +3,9 @@ import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar/Navbar";
 import AboutScreen from "./screens/AboutScreen/AboutScreen";
 import ContactScreen from "./screens/ContactScreen/ContactScreen";
+import FaqScreen from "./screens/FaqScreen/FaqScreen";
 import HomeScreen from "./screens/HomeScreen/HomeScreen";
+import { ABOUT_US, CONTACT_US, FAQ } from "./utilities/constants";
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
           <Navbar />
         </div>
         <main>
-          <Route path="/contact-us" component={ContactScreen} />
-          <Route path="/about-us" component={AboutScreen} />
+          <Route path={`/${CONTACT_US}`} component={ContactScreen} />
+          <Route path={`/${ABOUT_US}`} component={AboutScreen} />
+          <Route path={`/${FAQ}`} component={FaqScreen} />
           <Route path="/" component={HomeScreen} exact />
         </main>
         <footer>

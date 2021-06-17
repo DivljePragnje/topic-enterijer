@@ -34,10 +34,17 @@ export default function ContactScreen() {
             <i className="fa fa-envelope-square"></i> topicenterijer@gmail.com
           </p>
 
-          <Button text="GET DIRECTION" onClickCallback={onDirectionClicked} />
-          {/*<a href="https://www.google.com/maps/dir//45.6234722,19.5469444/@45.6234722,19.5447557,17z" target="_blank">
-            <button>GET DIRECTION</button>
-          </a>*/}
+          <a
+            href="https://www.google.com/maps/dir//45.6234722,19.5469444/@45.6234722,19.5447557,17z"
+            target="_blank"
+          >
+            <Button text="GET DIRECTION" onClickCallback={onDirectionClicked}>
+              <a
+                href="https://www.google.com/maps/dir//45.6234722,19.5469444/@45.6234722,19.5447557,17z"
+                target="_blank"
+              />
+            </Button>
+          </a>
         </div>
       </div>
     </div>

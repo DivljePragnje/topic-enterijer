@@ -1,12 +1,8 @@
-import { useCallback } from "react";
 import { Link } from "react-router-dom";
+import { ABOUT_US, CONTACT_US } from "../../utilities/constants";
 import "./Navbar.scss";
 
 export const Navbar = () => {
-  const onClick = useCallback(() => {
-    console.log("IDEMO");
-  }, []);
-
   return (
     <div>
       <header className="navbar">
@@ -23,10 +19,10 @@ export const Navbar = () => {
           <Link to="/catalog" className="link">
             CATALOG
           </Link>
-          <Link to="/about-us" className="link">
+          <Link to={`/${ABOUT_US}`} className="link">
             ABOUT US
           </Link>
-          <Link to="/contact-us" className="link">
+          <Link to={`/${CONTACT_US}`} className="link">
             CONTACT US
           </Link>
         </div>

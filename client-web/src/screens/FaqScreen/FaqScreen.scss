@@ -1,0 +1,51 @@
+@import "../../utilities/constants";
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .faq-item {
+    width: 45%;
+    align-self: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding-bottom: 2rem;
+
+    .faq-item-header {
+      padding: 5px 20px;
+      display: flex;
+      justify-content: space-between;
+      background-color: $main_color_brown_light;
+      cursor: pointer;
+      span {
+        font-size: 2rem;
+        align-self: center;
+      }
+    }
+    .faq-item-description {
+      padding: 5px 20px;
+      border-top: none;
+      border-style: solid;
+      border-width: thin;
+      border-color: $main_color_brown_light;
+      border-top: none;
+      max-height: 99em;
+      opacity: 1;
+      height: auto;
+      overflow: hidden;
+      transition: opacity 1s linear, max-height 1s linear;
+    }
+    .deactive {
+      opacity: 0;
+      max-height: 0;
+    }
+  }
+  .faq-item:first-child {
+    margin-top: 5rem;
+  }
+
+  .faq-item:last-child {
+    margin-bottom: 5rem;
+  }
+}
