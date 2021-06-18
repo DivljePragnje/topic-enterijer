@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import Newsletter from "../Newsletter/Newsletter";
 
 import { Link } from "react-router-dom";
 import { ABOUT_US, CONTACT_US, FAQ } from "../../utilities/constants";
@@ -6,6 +7,7 @@ import { ABOUT_US, CONTACT_US, FAQ } from "../../utilities/constants";
 export const Footer = () => {
   return (
     <div>
+      <Newsletter />
       <div className="footer-container">
         <div className="about-us">
           <h3>ABOUT US</h3>

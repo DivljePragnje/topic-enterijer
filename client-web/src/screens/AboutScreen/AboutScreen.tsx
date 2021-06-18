@@ -1,6 +1,5 @@
 import { useLayoutEffect } from "react";
 import Header from "../../components/Header/Header";
-import Newsletter from "../../components/Newsletter/Newsletter";
 import "./AboutScreen.scss";
 
 export default function AboutScreen() {
@@ -26,7 +25,6 @@ export default function AboutScreen() {
           love about the world we live in. We hope they’ll inspire you too.
         </p>
       </div>
-      <Newsletter />
     </div>
   );
 }

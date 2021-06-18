@@ -6,12 +6,14 @@ export const Navbar = () => {
   return (
     <div>
       <header className="navbar">
-        <img
-          src={`/images/logos/topic-name-white.png`}
-          alt="Logo"
-          width="100"
-          height="100"
-        />
+        <a href="/">
+          <img
+            src={`/images/logos/topic-name-white.png`}
+            alt="Logo"
+            width="100"
+            height="100"
+          />
+        </a>
         <div className="topnav" id="myTopnav">
           <Link to="/" className="link active">
             HOME

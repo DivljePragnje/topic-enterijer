@@ -8,7 +8,7 @@ export const Menu = () => {
 
   const renderImages = () => {
     return menuData.map((content, index) => {
-      const display = index === currentImage ? "block" : "none";
+      const display = index === currentImage ? "visible" : "hidden";
       return (
         <div key={index} className={`image-background ${display}`}>
           <img src={content.image} alt="background" />
@@ -26,10 +26,11 @@ export const Menu = () => {
       return <MenuItem key={index} item={item} onHover={onHover} />;
     });
   };
+
   return (
     <div className="menu-container">
-      <div className="menu-items">{renderMenuItems()}</div>
       {renderImages()}
+      <div className="menu-items">{renderMenuItems()}</div>
     </div>
   );
 };

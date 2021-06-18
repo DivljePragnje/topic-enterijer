@@ -1,0 +1,28 @@
+@import "../../utilities/constants";
+
+.stickyNav-container {
+  background-color: $main_color_blue;
+
+  width: 100%;
+  padding-top: 1rem;
+  height: 60px;
+  opacity: 0.9;
+
+  display: block;
+  position: fixed;
+  transition: all 0.5s ease;
+  z-index: 5;
+}
+
+.hidden {
+  top: -7rem;
+}
+.visible {
+  top: 0rem;
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

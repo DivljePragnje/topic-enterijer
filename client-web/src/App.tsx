@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar/Navbar";
+import { StickyNavbar } from "./components/Navbar/StickyNavbar";
 import AboutScreen from "./screens/AboutScreen/AboutScreen";
 import ContactScreen from "./screens/ContactScreen/ContactScreen";
 import FaqScreen from "./screens/FaqScreen/FaqScreen";
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <div className="grid-container">
         <div className="navbar-container">
+          <StickyNavbar />
           <Navbar />
         </div>
         <main>

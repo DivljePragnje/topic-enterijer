@@ -20,12 +20,6 @@
     justify-content: center;
     background-color: $main_color_brown_light;
 
-    h1,
-    p,
-    form {
-      margin-left: 5rem;
-    }
-
     h1 {
       margin-bottom: 0;
     }
@@ -37,17 +31,16 @@
       position: relative;
       background-color: $main_color_brown_light;
       border-radius: 30rem;
-      width: 50%;
       overflow: hidden;
       display: flex;
+      width: 50%;
       align-items: center;
-      justify-content: center;
-      text-align: center;
+      align-self: center;
 
       height: 6rem;
 
       input {
-        padding: 7rem 15px;
+        padding: 7rem 1.5rem;
         border: none;
         flex: 5 1;
         outline: none;
